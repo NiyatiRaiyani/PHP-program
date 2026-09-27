@@ -31,6 +31,76 @@
         echo "You are a 7 year old";
     else
         echo "You can not go to the party";
+    
+    echo "<br>";
+    $languages = array("Python","C++","OOP","PHP");
+    echo count($languages);
+    echo "<br>";
+    echo $languages[0];
+    echo "<br>";
+    echo $languages[2];
+    echo "<br>";
+
+    //Loops in PHP
+    $a=0;
+    while ($a <= 10) {
+        echo " <br> The value of a from the while loop is :";
+        echo $a;
+        $a++;
+    }
+    echo "<br>";
+    //Iterating arrays in PHP using while loop
+    $a=0;
+    while ($a < count($languages)) {
+        echo " <br> The value of a from the while loop is :";
+        echo $languages[$a];
+        $a++;
+    }
+
+    echo "<br>";
+    // do while loop
+    $a=0;
+    do {
+        echo " <br> The value of a from the do while loop is :";
+        echo $a;
+        $a++;
+    } while ($a < 10);
+
+    echo "<br>";
+    //for loop
+    for ($a=0; $a <= 10; $a++) { 
+        echo " <br> The value of a from the for loop is :";
+        echo $a;
+    }
+
+    echo "<br>";
+    //foreach loop   
+    foreach ($languages as $value) {
+        echo " <br> The value from foreach loop is :";
+        echo $value;
+    }
+
+    echo "<br>";
+    function print5(){
+        echo "FIVE";
+    }
+
+    print5();
+    echo "<br>";
+    print5();
+    echo "<br>";
+    print5();
+    echo "<br>";
+
+    function print_number($number){
+        echo "<br>Your number is ";
+        echo $number;
+    }
+
+    print_number(45);
+    print_number(55);
+    print_number(75);
+
     ?>
     </div>
 </body>
